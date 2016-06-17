@@ -25,4 +25,4 @@ app.get("/:text", function(req, res) {
     res.end(JSON.stringify(obj));
 });
 
-app.listen(8000);
+app.listen(Number(process.env.port) || 8000);
