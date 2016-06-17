@@ -24,5 +24,6 @@ app.get("/:text", function(req, res) {
     }
     res.end(JSON.stringify(obj));
 });
+var port=Number(process.env.PORT || 3000);
 
-app.listen(Number(process.env.port) || 8000);
+app.listen(port);
