@@ -3,7 +3,7 @@ var dateFormat = require('dateformat');
 var app = express();
 var obj;
 app.all("/", function(req, res){
-    res.sendFile("index.html");
+    res.sendFile(__dirname + '/index.html');
 });
 app.get("/:text", function(req, res) {
     var date;
